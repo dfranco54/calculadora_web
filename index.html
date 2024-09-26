@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="resultados">
+            <table>
+                <div class="teclas">
+                <tr>
+                    <td><button onclick="agregarResultados('7')">7</button></td>
+                    <td><button onclick="agregarResultados('8')">8</button></td>
+                    <td><button onclick="agregarResultados('9')">9</button></td>
+                    <td><button onclick="agregarResultados('+')" id="operador">+</button></td>
+                    <td><button onclick="borrar()" id="operador">← </button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="agregarResultados('4')">4</button></td>
+                    <td><button onclick="agregarResultados('5')">5</button></td>
+                    <td><button onclick="agregarResultados('6')">6</button></td>
+                    <td><button onclick="agregarResultados('-')" id="operador">-</button></td>
+                    <td><button onclick="limpiar()" id="operador">C</button></td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="agregarResultados('1')">1</button></td>
+                    <td><button onclick="agregarResultados('2')">2</button></td>
+                    <td><button onclick="agregarResultados('3')">3</button></td>
+                    <td><button onclick="agregarResultados('*')" id="operador">*</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="agregarResultados('0')">0</button></td>
+                    <td><button onclick="agregarResultados('.')">.</button></td>
+                    <td><button onclick="agregarResultados('/')" id="operador">/</button></td>
+                    <td><button onclick="calcular()" id="operador">=</button></td>
+ 
+                </tr>
+                </div>
+            </table>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
