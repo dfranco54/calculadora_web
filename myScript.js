@@ -2,17 +2,11 @@
 
 const resultados = document.getElementById("resultados");
 
-function agregarResultados(input){
-    resultados.value += input;
-}
+const agregarResultados = (input) => resultados.value += `${input}`;
 
-function limpiar(){
-    resultados.value = '';
-}
+const limpiar = () => resultados.value = '';
 
-function calcular(){
-    resultados.value = eval(resultados.value);
-}
+const calcular = () => resultados.value = eval(resultados.value);
 
 function borrar(){
     if(resultados.value.length > 0) {
